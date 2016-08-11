@@ -4,6 +4,7 @@ pos_tweets = [('I love this car', 'positive'),
               ('I feel great this morning', 'positive'),
               ('I am so excited about the concert', 'positive'),
               ('He is my best friend', 'positive')]
+              
 neg_tweets = [('I do not like this car', 'negative'),
               ('This view is horrible', 'negative'),
               ('I feel tired this morning', 'negative'),
@@ -36,8 +37,6 @@ def get_word_features(wordlist):
     return word_features
 
 word_features = get_word_features(get_words_in_tweets(tweets))
-
-word_features
 
 def extract_features(document):
     document_words = set(document)
